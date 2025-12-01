@@ -13,6 +13,8 @@ public class QuitGameScript : MonoBehaviour
 
         if (buttonText.text == "Clicked")
         {
+            //play the sound effect
+            FindFirstObjectByType<AudioManager>().Play("Button Click");
             print("Returning to the main menu");
             SceneManager.LoadScene("Frontend");
         }

@@ -13,6 +13,8 @@ public class LoadLevel2Script : MonoBehaviour
 
         if (buttonText.text == "Clicked")
         {
+            //play the sound effect
+            FindFirstObjectByType<AudioManager>().Play("Button Click");
             print("Level 2 is loading");
             SceneManager.LoadScene("Level 2");
         }

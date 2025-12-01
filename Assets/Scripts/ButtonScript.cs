@@ -16,6 +16,8 @@ public class ButtonScript : MonoBehaviour
 
         if (buttonText.text == "Clicked")
         {
+            //play the sound effect
+            FindFirstObjectByType<AudioManager>().Play("Button Click");
             LevelManager.instance.playerhp = recover;
             print("Players hp has been reset");
         }

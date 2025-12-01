@@ -26,6 +26,7 @@ public class EnemyCubeScript : MonoBehaviour
     {
         if ( collision.gameObject.tag == "Player" )
         {
+            FindFirstObjectByType<AudioManager>().Play("Hit");
             print("Collided with the player");
             LevelManager.instance.playerhp -= 10;
         }
