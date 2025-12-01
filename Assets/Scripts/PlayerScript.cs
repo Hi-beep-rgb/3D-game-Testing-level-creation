@@ -5,11 +5,15 @@ public class PlayerScript : MonoBehaviour
 {
     Rigidbody rb;
 
+    AudioSource audioSource;
+    public AudioClip sfx1; //Sound effect asset from the sfx folder
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         LevelManager.instance.SetHighScore(50);
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -54,6 +58,11 @@ public class PlayerScript : MonoBehaviour
         {
             transform.position = new Vector3(555.81f, 0.769f, -16.2f);
         }
+    }
+
+    void PlaySoundEffect()
+    {
+        audioSource.PlayOneShot(sfx1, 0.7f); //playes the audio clip at a volume of 0.7
     }
 
     //debug text output
