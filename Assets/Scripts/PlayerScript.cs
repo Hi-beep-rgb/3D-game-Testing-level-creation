@@ -60,10 +60,10 @@ public class PlayerScript : MonoBehaviour
         }
     }
 
-    void PlaySoundEffect()
+    /*void PlaySoundEffect()
     {
         audioSource.PlayOneShot(sfx1, 0.7f); //playes the audio clip at a volume of 0.7
-    }
+    }*/
 
     //debug text output
     private void OnGUI()
@@ -71,15 +71,16 @@ public class PlayerScript : MonoBehaviour
         //read variable from LevelManager singleton
         int score = LevelManager.instance.GetHighScore();
 
-        string text = "High score: " + score;
+        string text = "Player score: " + score;
 
-        /*text += "\nThis is more text";*/
+        /*text += "\nHigh score: " + highscore;*/
 
         // define debug text area
         GUI.contentColor = Color.white;
         GUILayout.BeginArea(new Rect(10f, 10f, 1600f, 1600f));
         GUILayout.Label($"<size=24>{text}</size>");
         GUILayout.EndArea();
+
     }
 
 }

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class LevelManager : MonoBehaviour
 {
@@ -46,11 +47,36 @@ public class LevelManager : MonoBehaviour
     void Start()
     {
         playerhp = 100;
+
+        if (PlayerPrefs.HasKey("ScoreValue"))
+        {
+            highScore = PlayerPrefs.GetInt("ScoreValue");
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        /*Debug.Log(playerhp);*/
+        
+    }
+
+    public void AddPoints()
+    {
+        highScore += 50;
+    }
+
+    public void RemovePoints()
+    {
+        highScore -= 50;
+    }
+
+    public void SavePoints()
+    {
+        PlayerPrefs.SetInt("ScoreValue", highScore);
+    }
+
+    public void LoadPoints()
+    {
+        highScore = PlayerPrefs.GetInt("ScoreValue");
     }
 }
