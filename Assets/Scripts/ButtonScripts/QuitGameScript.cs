@@ -19,4 +19,12 @@ public class QuitGameScript : MonoBehaviour
             SceneManager.LoadScene("Frontend");
         }
     }
+
+    public void QuitToMain()
+    {
+        //play the sound effect
+        FindFirstObjectByType<AudioManager>().Play("Button Click");
+        SceneManager.LoadSceneAsync(0);
+        print("Main Menu scene has been loaded.");
+    }
 }

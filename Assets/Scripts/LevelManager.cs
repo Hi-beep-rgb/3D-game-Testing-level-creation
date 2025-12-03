@@ -9,7 +9,7 @@ public class LevelManager : MonoBehaviour
 {
     //instance refers to the script itself
     public static LevelManager instance;
-    private int highScore;
+    public int highScore;
     public int playerhp;
 
     // Awake loads before the start method
