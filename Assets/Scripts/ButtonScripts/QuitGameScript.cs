@@ -15,7 +15,7 @@ public class QuitGameScript : MonoBehaviour
         {
             //play the sound effect
             FindFirstObjectByType<AudioManager>().Play("Button Click");
-            print("Returning to the main menu");
+            print("Returning to the Frontend");
             SceneManager.LoadScene("Frontend");
         }
     }

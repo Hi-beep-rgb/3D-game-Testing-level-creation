@@ -56,7 +56,7 @@ public class PlayerScript : MonoBehaviour
 
         if (LevelManager.instance.playerhp <= 0)
         {
-            transform.position = new Vector3(555.81f, 0.769f, -16.2f);
+            transform.position = new Vector3(555.81f, 1.5f, -16.2f);
         }
     }
 
@@ -75,7 +75,7 @@ public class PlayerScript : MonoBehaviour
 
         /*text += "\nHigh score: " + highscore;*/
 
-        // define debug text area
+        //define debug text area
         GUI.contentColor = Color.white;
         GUILayout.BeginArea(new Rect(10f, 10f, 1600f, 1600f));
         GUILayout.Label($"<size=24>{text}</size>");
