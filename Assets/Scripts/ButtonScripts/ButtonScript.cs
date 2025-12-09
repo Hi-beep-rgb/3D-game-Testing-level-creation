@@ -9,31 +9,25 @@ public class ButtonScript : MonoBehaviour
 {
     // public variable to reference the button text
     public TMP_Text buttonText;
-    public Slider sfxSlider;
     int recover;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        sfxSlider.value = 1f;
+        
     }
 
     public void ButtonMethod()
     {
-        buttonText.text = "Clicked";
+        buttonText.text = "RESET";
         recover = 100;
 
-        if (buttonText.text == "Clicked")
+        if (buttonText.text == "RESET")
         {
             //play the sound effect
             FindFirstObjectByType<AudioManager>().Play("Button Click");
             LevelManager.instance.playerhp = recover;
             print("Players hp has been reset");
         }
-    }
-
-    public void ChangeSFXVolume(float volume)
-    {
-        AudioManager.instance.sfxVol = volume;
     }
 }

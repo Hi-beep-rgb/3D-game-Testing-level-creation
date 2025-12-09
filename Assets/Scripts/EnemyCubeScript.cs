@@ -29,6 +29,7 @@ public class EnemyCubeScript : MonoBehaviour
             FindFirstObjectByType<AudioManager>().Play("Hit");
             print("Collided with the player");
             LevelManager.instance.playerhp -= 10;
+            LevelManager.instance.RemovePoints();
         }
     }
 }
