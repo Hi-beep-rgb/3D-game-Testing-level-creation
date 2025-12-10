@@ -1,24 +1,26 @@
 using UnityEngine;
+using UnityEngine.Audio;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
 
 public class MenuScript : MonoBehaviour
 {
-    public Slider musicSlider;
-    public Slider sfxSlider;
+    [SerializeField] AudioMixer mixer;
+    [SerializeField] Slider musicSlider;
+    [SerializeField] Slider sfxSlider;
 
     void Awake()
     {
-        AudioManager.instance.musicVol = 1;
-        AudioManager.instance.sfxVol = 1;
+        /*AudioManager.instance.musicVol = 1;
+        AudioManager.instance.sfxVol = 1;*/
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         AudioManager.instance.Play("Background Music");
-        musicSlider.value = 1f;
-        sfxSlider.value = 1f;
+        /*musicSlider.value = 1f;
+        sfxSlider.value = 1f;*/
     }
 
     // Update is called once per frame

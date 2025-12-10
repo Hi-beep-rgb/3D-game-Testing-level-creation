@@ -146,7 +146,7 @@ RectTransform:
   m_GameObject: {fileID: 75591158}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 12, y: 6, z: 1}
+  m_LocalScale: {x: 14, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1949814893}
@@ -2282,7 +2282,7 @@ RectTransform:
   m_Father: {fileID: 1123905595}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2601,7 +2601,7 @@ RectTransform:
   m_GameObject: {fileID: 1018474960}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 12, y: 6, z: 1}
+  m_LocalScale: {x: 14, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 866046343}
@@ -3005,7 +3005,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1209660426
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3063,8 +3063,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 871058618}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3183,8 +3183,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2035542688}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3534,7 +3534,7 @@ RectTransform:
   m_GameObject: {fileID: 1530767677}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 12, y: 6, z: 1}
+  m_LocalScale: {x: 14, y: 6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1209660426}
@@ -3690,6 +3690,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6bfab862f446c74aadaf7ca45bb73af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  mixer: {fileID: 0}
   musicSlider: {fileID: 1732247374}
   sfxSlider: {fileID: 1858629209}
 --- !u!4 &1553534355
@@ -3855,6 +3856,7 @@ GameObject:
   - component: {fileID: 1652352889}
   - component: {fileID: 1652352888}
   - component: {fileID: 1652352887}
+  - component: {fileID: 1652352890}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -3949,6 +3951,21 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!114 &1652352890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652352885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e169be2989ce49428a26c6882c1623f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CanvasScript
+  mixer: {fileID: 24100000, guid: cfc7202e5b511a245a284c8e6382f5fc, type: 2}
+  musicSlider: {fileID: 1732247374}
+  sfxSlider: {fileID: 1858629209}
 --- !u!1 &1732247371
 GameObject:
   m_ObjectHideFlags: 0
@@ -4045,7 +4062,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 804431661}
   m_HandleRect: {fileID: 1216388398}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 1
@@ -4293,7 +4310,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 1998587101}
   m_HandleRect: {fileID: 1293963691}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 1
@@ -4531,7 +4548,7 @@ RectTransform:
   m_Father: {fileID: 1204543118}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}

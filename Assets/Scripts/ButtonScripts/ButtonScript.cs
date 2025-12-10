@@ -7,15 +7,13 @@ using UnityEngine.UI;
 
 public class ButtonScript : MonoBehaviour
 {
+    
     // public variable to reference the button text
     public TMP_Text buttonText;
     int recover;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+
 
     public void ButtonMethod()
     {
@@ -29,5 +27,16 @@ public class ButtonScript : MonoBehaviour
             LevelManager.instance.playerhp = recover;
             print("Players hp has been reset");
         }
+    }
+
+    public void ChangeMusicVolume(float vol)
+    {
+        AudioManager.instance.musicVol = vol;
+    }
+
+    public void ChangeSFXVolume(float volume)
+    {
+        AudioManager.instance.sfxVol = volume;
+        print("sfx vol=" + volume);
     }
 }
