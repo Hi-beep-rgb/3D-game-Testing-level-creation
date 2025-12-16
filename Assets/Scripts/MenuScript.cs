@@ -5,10 +5,6 @@ using UnityEngine.UI;
 
 public class MenuScript : MonoBehaviour
 {
-    [SerializeField] AudioMixer mixer;
-    [SerializeField] Slider musicSlider;
-    [SerializeField] Slider sfxSlider;
-
     void Awake()
     {
         /*AudioManager.instance.musicVol = 1;
