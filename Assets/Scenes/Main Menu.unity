@@ -1257,25 +1257,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
   sounds:
   - name: Button Click
-    clip: {fileID: 8300000, guid: 135550133038b4a4095517f149e38721, type: 3}
+    clip: {fileID: 8300000, guid: 432ff6915a8c90846865ec9d55f86516, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Hit
-    clip: {fileID: 8300000, guid: 3d81a950cdafe3342886bc2e4e297a86, type: 3}
+    clip: {fileID: 8300000, guid: 394b9f56ba376814686436c5eafeaf00, type: 3}
     volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Background Music
-    clip: {fileID: 8300000, guid: 775020d24362e8e4ea51e8aec34580c9, type: 3}
+    clip: {fileID: 8300000, guid: 2ff8cf7f1daf7a2439b866d9c62663ec, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Music
+    clip: {fileID: 8300000, guid: 4a60b3a595e4349469fbd3551c8ee6ef, type: 3}
     volume: 1
     pitch: 1
     loop: 1
     source: {fileID: 0}
   musicVol: 0
   sfxVol: 0
+  mixer: {fileID: 24100000, guid: cfc7202e5b511a245a284c8e6382f5fc, type: 2}
 --- !u!4 &473526093
 Transform:
   m_ObjectHideFlags: 0
@@ -3973,7 +3980,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1732247372}
   - component: {fileID: 1732247374}
-  - component: {fileID: 1732247373}
   m_Layer: 5
   m_Name: MusicVolumeSlider
   m_TagString: Untagged
@@ -4003,18 +4009,6 @@ RectTransform:
   m_AnchoredPosition: {x: -2, y: 100}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1732247373
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1732247371}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8a4d97113b4abb4baffed62184da53f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SliderScript
 --- !u!114 &1732247374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4065,19 +4059,7 @@ MonoBehaviour:
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1732247373}
-        m_TargetAssemblyTypeName: SliderScript, Assembly-CSharp
-        m_MethodName: ChangeMusicVolume
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1788496666
 GameObject:
   m_ObjectHideFlags: 0
@@ -4233,7 +4215,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1858629208}
   - component: {fileID: 1858629209}
-  - component: {fileID: 1858629210}
   m_Layer: 5
   m_Name: SFXVolumeSlider
   m_TagString: Untagged
@@ -4313,31 +4294,7 @@ MonoBehaviour:
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1858629210}
-        m_TargetAssemblyTypeName: MusicVolumeScript, Assembly-CSharp
-        m_MethodName: ChangeSFXVolume
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1858629210
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1858629207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b8a4d97113b4abb4baffed62184da53f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MusicVolumeScript
+      m_Calls: []
 --- !u!1 &1889985556
 GameObject:
   m_ObjectHideFlags: 0

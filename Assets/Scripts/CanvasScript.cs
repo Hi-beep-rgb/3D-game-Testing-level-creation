@@ -8,11 +8,25 @@ public class CanvasScript : MonoBehaviour
     [SerializeField] Slider musicSlider;
     [SerializeField] Slider sfxSlider;
 
-    const string MIXER_MUSIC = "MusicVolume";
-    const string MIXER_SFX = "SFXVolume";
+    public const string MIXER_MUSIC = "MusicVolume";
+    public const string MIXER_SFX = "SFXVolume";
 
     private void Awake()
     {
+        musicSlider.onValueChanged.AddListener(SetMusicVolume);
+        sfxSlider.onValueChanged.AddListener(SetSFXVolume);
+    }
+
+    void Start()
+    {
+        musicSlider.value = PlayerPrefs.GetFloat(AudioManager.MUSIC_KEY, 1f);
+        sfxSlider.value = PlayerPrefs.GetFloat(AudioManager.SFX_KEY, 1f);
+    }
+
+    void OnDisable()
+    {
+        PlayerPrefs.SetFloat(AudioManager.MUSIC_KEY, musicSlider.value);
+        PlayerPrefs.SetFloat(AudioManager.SFX_KEY, sfxSlider.value);
     }
 
     public void SetMusicVolume(float value)
@@ -22,11 +36,13 @@ public class CanvasScript : MonoBehaviour
 
     public void SetSFXVolume(float value)
     {
+        mixer.SetFloat(MIXER_SFX, Mathf.Log10(value) * 20);
     }
 
-    public void MusicSliderChanged( float value )
+    /*public void MusicSliderChanged( float value )
     {
         print("value is " + value);
+        mixer.SetFloat(MIXER_MUSIC, Mathf.Log10(value) * 20);
     }
 
     public void SfxSliderChanged(float value)
@@ -34,7 +50,7 @@ public class CanvasScript : MonoBehaviour
         print("sfx value is " + value);
         mixer.SetFloat(MIXER_SFX, Mathf.Log10(value) * 20);
 
-    }
+    }*/
 
 
 

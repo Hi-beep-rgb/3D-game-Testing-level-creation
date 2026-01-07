@@ -10,6 +10,11 @@ public class AudioManager : MonoBehaviour
 
     public float musicVol, sfxVol;
 
+    [SerializeField] AudioMixer mixer;
+    //Keys created for the PlayerPrefs
+    public const string MUSIC_KEY = "musicVolume";
+    public const string SFX_KEY = "sfxVolume";
+
     void Awake()
     {
         // if instance is null, store a reference to this instance
@@ -37,6 +42,8 @@ public class AudioManager : MonoBehaviour
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
         }
+
+        LoadVolume();
     }
 
     public void Play( string name )
@@ -59,6 +66,15 @@ public class AudioManager : MonoBehaviour
             return;
         }
         s.source.volume = vol;
+    }
+
+    void LoadVolume() //Volume saved in CanvasScript.cs
+    {
+        float musicVolume = PlayerPrefs.GetFloat(MUSIC_KEY, 1f);
+        float sfxVolume = PlayerPrefs.GetFloat(SFX_KEY, 1f);
+
+        mixer.SetFloat(CanvasScript.MIXER_MUSIC, Mathf.Log10(musicVolume) * 20);
+        mixer.SetFloat(CanvasScript.MIXER_SFX, Mathf.Log10(sfxVolume) * 20);
     }
 
     /*

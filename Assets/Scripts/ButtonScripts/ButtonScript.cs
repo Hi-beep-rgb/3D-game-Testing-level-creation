@@ -29,7 +29,7 @@ public class ButtonScript : MonoBehaviour
         }
     }
 
-    public void ChangeMusicVolume(float vol)
+    /*public void ChangeMusicVolume(float vol)
     {
         AudioManager.instance.musicVol = vol;
     }
@@ -38,5 +38,5 @@ public class ButtonScript : MonoBehaviour
     {
         AudioManager.instance.sfxVol = volume;
         print("sfx vol=" + volume);
-    }
+    }*/
 }
