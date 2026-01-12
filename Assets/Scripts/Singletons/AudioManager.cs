@@ -8,7 +8,7 @@ public class AudioManager : MonoBehaviour
 
     public Sound[] sounds;
 
-    public float musicVol, sfxVol;
+    /*public float musicVol, sfxVol;*/
 
     [SerializeField] AudioMixer mixer;
     //Keys created for the PlayerPrefs
@@ -41,6 +41,7 @@ public class AudioManager : MonoBehaviour
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
             s.source.loop = s.loop;
+            s.source.outputAudioMixerGroup = s.mixerGroup; //Allows the mixer to be set as the audios output, needed for the Sound.cs
         }
 
         LoadVolume();
