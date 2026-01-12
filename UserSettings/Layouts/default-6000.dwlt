@@ -360,7 +360,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 88e5ffffa0e5fffff8e7ffff14e8ffff26e8ffff50e8ffff14fbffff
+      m_ExpandedIDs: 2ef1ffff46f1ffff9ef3ffffbaf3ffffccf3fffff6f3ffff14fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -916,7 +916,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.00060236314, y: 0.0059993314, z: -0.000003099676, w: 0.99999046}
     speed: 2
-    m_Value: {x: -0.00060235796, y: 0.0059992797, z: -0.0000030996493, w: 0.9999819}
+    m_Value: {x: 0.00060236314, y: -0.005999332, z: 0.0000030996762, w: -0.99999046}
   m_Size:
     m_Target: 222.98537
     speed: 2
@@ -1193,7 +1193,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/_Recovery
+    - Assets
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1203,16 +1203,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/_Recovery
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Year 1\Isaac\Unity Projects\3D-game-Testing-level-creation
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 2aaf0000
-    m_LastClickedID: 44842
-    m_ExpandedIDs: 00000000bcae000000ca9a3b
+    m_SelectedIDs: b8ae0000
+    m_LastClickedID: 44728
+    m_ExpandedIDs: 00000000b8ae000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1241,7 +1241,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000bcae0000
+    m_ExpandedIDs: 00000000b8ae0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
