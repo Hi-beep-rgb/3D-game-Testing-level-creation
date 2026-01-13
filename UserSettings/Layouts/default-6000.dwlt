@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Project
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -360,7 +360,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 2ef1ffff46f1ffff9ef3ffffbaf3ffffccf3fffff6f3ffff14fbffff
+      m_ExpandedIDs: 80e3ffff98e3fffff0e5ffff0ce6ffff1ee6ffff48e6ffff14fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -916,7 +916,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.00060236314, y: 0.0059993314, z: -0.000003099676, w: 0.99999046}
     speed: 2
-    m_Value: {x: 0.00060236314, y: -0.005999332, z: 0.0000030996762, w: -0.99999046}
+    m_Value: {x: -0.00060235796, y: 0.0059992797, z: -0.0000030996493, w: 0.9999819}
   m_Size:
     m_Target: 222.98537
     speed: 2
@@ -1193,7 +1193,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Sound/Sfx
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1203,16 +1203,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Sound/Sfx
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Year 1\Isaac\Unity Projects\3D-game-Testing-level-creation
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: b8ae0000
-    m_LastClickedID: 44728
-    m_ExpandedIDs: 00000000b8ae000000ca9a3b
+    m_SelectedIDs: e8b00000
+    m_LastClickedID: 45288
+    m_ExpandedIDs: 00000000b2ae00002aaf000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1241,7 +1241,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b8ae0000
+    m_ExpandedIDs: 00000000b2ae0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1269,7 +1269,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000fae7ffff9af4ffffe8e3ffff6aaa000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
