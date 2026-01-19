@@ -28,15 +28,4 @@ public class ButtonScript : MonoBehaviour
             print("Players hp has been reset");
         }
     }
-
-    /*public void ChangeMusicVolume(float vol)
-    {
-        AudioManager.instance.musicVol = vol;
-    }
-
-    public void ChangeSFXVolume(float volume)
-    {
-        AudioManager.instance.sfxVol = volume;
-        print("sfx vol=" + volume);
-    }*/
 }
